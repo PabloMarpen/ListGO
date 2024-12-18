@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for Light mode -->
+    <style name="Base.Theme.ListGO" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here -->
+        <item name="colorPrimary">@color/white</item> <!-- Define color -->
+    </style>
+
+    <style name="Theme.ListGO" parent="Base.Theme.ListGO" />
+</resources>

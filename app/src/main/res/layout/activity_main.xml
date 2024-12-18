@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solidcolorimage"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="341dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="244dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/fugazone"
+        android:text="Lista de la compra"
+        android:textAlignment="center"
+        android:textColor="#B0D3C2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/ButtonAnadir"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/boton_anadir"
+        android:text="Añadir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
+
+    <Button
+        android:id="@+id/buttonImprimir"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="11dp"
+        android:text="Imprimir"
+        android:background="@drawable/boton_imprimir"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonAnadir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ButtonAnadir"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonAnadir" />
+
+    <Button
+        android:id="@+id/buttonBorrarTodo"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="11dp"
+        android:text="Borrar todo"
+        android:background="@drawable/boton_borrar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonImprimir"
+        app:layout_constraintStart_toStartOf="@+id/buttonImprimir"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImprimir" />
+
+    <Button
+        android:id="@+id/buttonBorrarSel"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="11dp"
+        android:text="Borrar selección"
+        android:background="@drawable/boton_borrar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBorrarTodo"
+        app:layout_constraintStart_toStartOf="@+id/buttonBorrarTodo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBorrarTodo" />
+
+    <Button
+        android:id="@+id/buttonSalir"
+        android:layout_width="158dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/boton_salir"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBorrarSel"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/buttonBorrarSel"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBorrarSel" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="86dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

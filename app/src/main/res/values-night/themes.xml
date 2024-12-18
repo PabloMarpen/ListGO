@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema oscuro -->
+    <style name="Base.Theme.ListGO." parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.ListGO" parent="Base.Theme.ListGO" />
+</resources>
